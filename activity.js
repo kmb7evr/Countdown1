@@ -13,6 +13,23 @@ const bookList = [
     { title: "Moby Dick", author: "Herman Melville" },
   ];
 
+let add = (title1, author1) => {
+    var dict = {};
+    dict["title"] = title1;
+    dict["author"] = author1;
+    bookList.push(dict);
+}
+
+let remove = title1 => {
+    for (let i = 0; i < bookList.length; i++){
+      if (bookList[i].title === title1) {
+          bookList.splice(i,1);
+      }
+    }
+  }
+
+let print = () => console.log(bookList);
+
   /* Intermediate Challenge */
   
   /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
