@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+}
+
+#name {
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.list-item {
+    font-family: sans-serif;
+}
