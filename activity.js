@@ -98,9 +98,28 @@ let sumOfNumbers = num => {
 
   /* (7) Write an arrow function that converts the temperature from Celsius to Fahrenheit and then tells
     me what I should wear accordingly */
+let celsiusToFahrenheit = temperature => {
+  temperature = (temperature * 9/5) + 32
+  if (temperature < 50) {
+    console.log("It is ", temperature ," degrees outside. You need to wear a jacket.")
+  }
+  else {
+    console.log("It is ", temperature ," degrees outside. You do not need to wear a jacket.")
+  }
+}
   
   /* (8) Write a function that takes in an array and prints out the amount of truthy values in that array
     using .forEach() */
+
+let isTruthy = tempArray => {
+   num = 0
+   tempArray.forEach(element => {
+        if (element) {
+           num++
+        }
+   })
+  return num  
+}
   
   const exampleArray = ["Hello, world!", 8, null, false, "", "0", -22];
   
