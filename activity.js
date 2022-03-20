@@ -27,8 +27,21 @@ let remove = title1 => {
       }
     }
   }
+/* the input will either be 1 for print titles or 0 for print authors */
 
-let print = () => console.log(bookList);
+let printBooksOrAuthors = num => {
+    if (num) {
+      for (let i = 0; i < bookList.length; i++) {
+        console.log(Object.values(bookList[i])[0])
+      }
+    }
+    else {
+      for (let i = 0; i < bookList.length; i++) {
+        console.log(Object.values(bookList[i])[1])
+      }
+    }
+}
+
 
   /* Intermediate Challenge */
   
